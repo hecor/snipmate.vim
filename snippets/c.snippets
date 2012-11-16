@@ -1,3 +1,9 @@
+#header
+snippet header
+	#ifndef ${1:_`toupper(Filename('$1_H', 'UNTITLED_H'))`__}
+	#define $1
+	${2}
+	#endif /* end of include guard: $1 */
 # main()
 snippet main
 	int main(int argc, const char *argv[])
